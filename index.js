@@ -12,7 +12,7 @@ app.use(express.static(path.resolve(__dirname, "./build")));
 app.use(express.static(__dirname+'/public'))
 const cors = require('cors')
 app.use(cors())
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 cloudinary.config({ 
     cloud_name: process.env.CLOUD_NAME, 
     api_key: process.env.API_KEY,
